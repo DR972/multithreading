@@ -1,0 +1,12 @@
+ship1, true, 500
+ship2, true, 380
+ship3, true, 300
+ship4, true, 400
+ship5, false, 580
+ship6, false, 300
+ship7, true, 500
+ship8, false, 300
+ship9, false, 700
+ship10, false, 500
+ship11, true, 680
+ship12, false, 300

@@ -1,0 +1,31 @@
+2021-12-15 16:13:51 [main] INFO  by.rozmysl.reader.TextReader - Read file src/main/resources/port/queue.txt is successfully
+2021-12-15 16:13:51 [main] INFO  by.rozmysl.Port - Port initialized successfully.
+2021-12-15 16:13:51 [pool-2-thread-1] INFO  by.rozmysl.entity.Ship - The ship1 processed at the berth1 of the port.
+2021-12-15 16:13:51 [pool-2-thread-2] INFO  by.rozmysl.entity.Ship - The ship2 processed at the berth2 of the port.
+2021-12-15 16:13:52 [pool-2-thread-2] INFO  by.rozmysl.entity.Ship - ship2`s has finished processing at the berth2 of the port. The warehouse has space for 120 containers.
+2021-12-15 16:13:52 [pool-2-thread-1] INFO  by.rozmysl.entity.Ship - ship1`s has finished processing at the berth1 of the port. The warehouse has space for 120 containers.
+2021-12-15 16:13:53 [pool-2-thread-2] INFO  by.rozmysl.Port - ship3's ship's cargo (300 containers) won't fit.
+2021-12-15 16:13:53 [pool-2-thread-2] INFO  by.rozmysl.Port - ship4's ship's cargo (400 containers) won't fit.
+2021-12-15 16:13:53 [pool-2-thread-1] INFO  by.rozmysl.Port - ship3's ship's cargo (300 containers) won't fit.
+2021-12-15 16:13:53 [pool-2-thread-1] INFO  by.rozmysl.Port - ship4's ship's cargo (400 containers) won't fit.
+2021-12-15 16:13:53 [pool-2-thread-5] INFO  by.rozmysl.entity.Ship - The ship5 processed at the berth2 of the port.
+2021-12-15 16:13:53 [pool-2-thread-6] INFO  by.rozmysl.entity.Ship - The ship6 processed at the berth1 of the port.
+2021-12-15 16:13:54 [pool-2-thread-6] INFO  by.rozmysl.entity.Ship - ship6`s has finished processing at the berth1 of the port. The warehouse has space for 1000 containers.
+2021-12-15 16:13:54 [pool-2-thread-3] INFO  by.rozmysl.entity.Ship - The ship3 processed at the berth1 of the port.
+2021-12-15 16:13:54 [pool-2-thread-5] INFO  by.rozmysl.entity.Ship - ship5`s has finished processing at the berth2 of the port. The warehouse has space for 700 containers.
+2021-12-15 16:13:54 [pool-2-thread-4] INFO  by.rozmysl.entity.Ship - The ship4 processed at the berth2 of the port.
+2021-12-15 16:13:55 [pool-2-thread-3] INFO  by.rozmysl.entity.Ship - ship3`s has finished processing at the berth1 of the port. The warehouse has space for 300 containers.
+2021-12-15 16:13:55 [pool-2-thread-3] INFO  by.rozmysl.Port - ship7's ship's cargo (500 containers) won't fit.
+2021-12-15 16:13:55 [pool-2-thread-8] INFO  by.rozmysl.entity.Ship - The ship8 processed at the berth1 of the port.
+2021-12-15 16:13:55 [pool-2-thread-4] INFO  by.rozmysl.entity.Ship - ship4`s has finished processing at the berth2 of the port. The warehouse has space for 600 containers.
+2021-12-15 16:13:55 [pool-2-thread-7] INFO  by.rozmysl.entity.Ship - The ship7 processed at the berth2 of the port.
+2021-12-15 16:13:56 [pool-2-thread-8] INFO  by.rozmysl.entity.Ship - ship8`s has finished processing at the berth1 of the port. The warehouse has space for 100 containers.
+2021-12-15 16:13:56 [pool-2-thread-9] INFO  by.rozmysl.entity.Ship - The ship9 processed at the berth1 of the port.
+2021-12-15 16:13:56 [pool-2-thread-7] INFO  by.rozmysl.entity.Ship - ship7`s has finished processing at the berth2 of the port. The warehouse has space for 800 containers.
+2021-12-15 16:13:56 [pool-2-thread-10] INFO  by.rozmysl.entity.Ship - The ship10 processed at the berth2 of the port.
+2021-12-15 16:13:57 [pool-2-thread-10] INFO  by.rozmysl.entity.Ship - ship10`s has finished processing at the berth2 of the port. The warehouse has space for 1300 containers.
+2021-12-15 16:13:57 [pool-2-thread-11] INFO  by.rozmysl.entity.Ship - The ship11 processed at the berth2 of the port.
+2021-12-15 16:13:58 [pool-2-thread-9] INFO  by.rozmysl.entity.Ship - ship9`s has finished processing at the berth1 of the port. The warehouse has space for 620 containers.
+2021-12-15 16:13:58 [pool-2-thread-12] INFO  by.rozmysl.entity.Ship - The ship12 processed at the berth1 of the port.
+2021-12-15 16:13:59 [pool-2-thread-11] INFO  by.rozmysl.entity.Ship - ship11`s has finished processing at the berth2 of the port. The warehouse has space for 920 containers.
+2021-12-15 16:13:59 [pool-2-thread-12] INFO  by.rozmysl.entity.Ship - ship12`s has finished processing at the berth1 of the port. The warehouse has space for 920 containers.
