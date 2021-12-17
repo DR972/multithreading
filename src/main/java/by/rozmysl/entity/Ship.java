@@ -1,15 +1,14 @@
 package by.rozmysl.entity;
 
-import by.rozmysl.Port;
-import org.apache.logging.log4j.Level;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import by.rozmysl.service.PortService;
 
 import java.util.StringJoiner;
-import java.util.concurrent.TimeUnit;
 
 public class Ship extends Thread {
-    private static final Logger logger = LogManager.getLogger(Ship.class);
+    public enum State {
+        NEW, PROCESSING, FINISHED
+    }
+
     private final String shipId;
     private final boolean purposeUnloading;
     private final int shipWorkload;
@@ -26,34 +25,21 @@ public class Ship extends Thread {
         return shipId;
     }
 
-
     public boolean isPurposeUnloading() {
         return purposeUnloading;
     }
-
 
     public int getShipWorkload() {
         return shipWorkload;
     }
 
-    public enum State {
-        NEW, PROCESSING, FINISHED
+    public void setShipState(State shipState) {
+        this.shipState = shipState;
     }
 
     public void run() {
-        Port port = Port.getInstance();
-        Berth berth = port.getFreeBerth(this);
-        shipState = Ship.State.PROCESSING;
-        logger.log(Level.INFO, "The {} processed at the {} of the port.", shipId, berth.getName());
-        try {
-            TimeUnit.MILLISECONDS.sleep((long) shipWorkload * berth.getTimePerContainer());
-        } catch (InterruptedException e) {
-            logger.log(Level.ERROR, "Caught an exception: ", e);
-        }
-        shipState = Ship.State.FINISHED;
-        logger.log(Level.INFO, "{}`s has finished processing at the {} of the port. The warehouse has space for {} containers.",
-                shipId, berth.getName(), port.getCapacity() - port.getWorkload());
-        port.returnBerth(berth);
+        PortService service = PortService.getInstance();
+        if (service.getPort().getCapacity() != 0) service.startWorking(this);
     }
 
     @Override
